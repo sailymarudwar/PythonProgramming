@@ -10,5 +10,5 @@ percent = float(input("What percentage tip would you like to give? 10, 12 or 15?
 split = float(input("How many people to split the bill? "))
 
 tip_percent = percent / 100 + 1
-final_split = round((total / split) * tip_percent, 2)
+final_split = "{:.2f}".format(round((total / split) * tip_percent, 2))
 print(f"Each person should pay: {final_split}")
